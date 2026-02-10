@@ -4,8 +4,8 @@ from werkzeug.security import generate_password_hash
 # Konfigurasi Tampilan
 st.set_page_config(page_title="PLN - Password Hasher", page_icon="⚡")
 
-st.title("⚡ Password Hasher")
-st.subheader("STI Planning - Divisi MAC")
+st.title("Password Hasher")
+st.subheader("Membuat Hash Password")
 st.info("Tools ini menghasilkan hash untuk kolom 'password_hash' di BigQuery tanpa database.")
 
 # Input Password
@@ -21,7 +21,7 @@ if password_asli:
     # Menampilkan hasil dalam box kode agar mudah di-copy
     st.code(hash_code, language='text')
     
-    st.warning("⚠️ Copy 'Hash Code' di atas dan masukkan ke tabel BigQuery.")
+    st.warning("Copy 'Hash Code' di atas dan ikuti dokumentasi")
     
     # Tambahan: Detail format
     with st.expander("Lihat Detail Format"):
