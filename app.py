@@ -9,7 +9,7 @@ st.subheader("Membuat Hash Password")
 st.info("Tools ini menghasilkan hash untuk kolom 'password_hash' di BigQuery tanpa database.")
 
 # Input Password
-password_asli = st.text_input("Masukkan Password Asli:", placeholder="Contoh: plnes123")
+password_asli = st.text_input("Masukkan Password Asli:", placeholder=" ")
 
 if password_asli:
     # Generate Hash
